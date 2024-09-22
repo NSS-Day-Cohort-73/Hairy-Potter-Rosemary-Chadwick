@@ -2,6 +2,7 @@
 import { makePottery } from './PotteryWheel.js'
 import { firePottery } from './Kiln.js'
 import { toSellOrNotToSell, usePottery } from './PotteryCatalog.js'
+import { PotteryList } from './PotteryList.js'
 
 
 
@@ -45,6 +46,18 @@ console.log(allPotteryForSale);
 
 // Invoke the component function that renders the HTML list
 
+const renderPotteryToDOM = (potteryList) => {
+    const potteryElement = document.getElementsByClassName('potteryList');
+
+    if (potteryElement) {
+        potteryElement.innerHTML = potteryHTML; 
+        } else {
+            console.error('Could not find element with class "potteryList"')
+        }
+};
+
+const potteryHTML = PotteryList(); // Call PotteryList to get the HTML
+renderPotteryToDOM(potteryHTML);
 
 
 
