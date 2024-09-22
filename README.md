@@ -11,7 +11,7 @@ cd hairy-potter
 cd src
 code .
 ```
-
+let 
 1. Run the `serve` command to start the web server.
 1. Open the URL provided by `serve` in your browser.
 
