@@ -119,13 +119,26 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
-1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+I would like a meeting If I have things that could be improved, also if there was a better place to set my breakpoints to have a more concise explanation of the specific questions.
+thank you so much!
+
+1. Explain how you got the HTML, with the correct data, displayed in the browser? 
+   >  I started by defining and exporting a function. That function's purpose was to iterate over each object in the array and pull information from it and add it to a HTML element that would be added to the DOM.
+      I then went to the main.js module and imported that function. That function returned an array of HTML elements and strings with the information from each object in the allPotteryForSale[]. 
+      Then I made a render to Dom function to insert that HTML into the correct article with the class I had given it earlier. andI called it with the potterylist information.
+      I finally figured out how to get the function that populates the allPotteryForSale array to work properly. that's what took me the most time.
+      so finally it was written and populated correctly with all the right information and showed up on the page.
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > https://www.loom.com/share/f706842d3a10474d9e4eafa039ff98b6
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > It is important to modularize our code. It will help with organization and delegation for larger projects. We can also more precisely connect 2 modules, or pinpoint more directly the sections for css to transform.
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > I would need to go back and add an if statement. I would add it first and put all the cracked pottery in it's own array with a price key added. the rest of the pottery would stay in the same if else statements.
+   Right now they are in a multidimensional if else function. It would need to go to a single dimensional if else function. 
+   if cracked then pushed into an array of cracked pottery with .price added
+   if weight >= 6 $40 
+   else $20
+   then the augmented fired and not cracked would go into another array
+   I would put them in different arrays because they have different buyers. the cracked pottery already has a buyer and the !cracked pottery is to be listed to sell.
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > (https://www.loom.com/share/ad0c2bb865d44bfaa07032657eafe79e)

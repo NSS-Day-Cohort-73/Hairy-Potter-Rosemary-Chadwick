@@ -46,8 +46,8 @@ console.log(allPotteryForSale);
 
 // Invoke the component function that renders the HTML list
 
-const renderPotteryToDOM = (potteryList) => {
-    const potteryElement = document.getElementsByClassName('potteryList');
+const renderPotteryToDOM = (potteryHTML) => {
+    const potteryElement = document.getElementById('pottery-article')
 
     if (potteryElement) {
         potteryElement.innerHTML = potteryHTML; 

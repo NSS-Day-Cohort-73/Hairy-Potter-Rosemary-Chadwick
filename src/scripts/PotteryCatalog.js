@@ -19,11 +19,15 @@ const potteryToSell = []   //this array will hold pottery to be sold
         } else {
             firedPottery.price = 20;
         }
-    potteryToSell.push(firedPottery);
+        potteryToSell.push(firedPottery);
+        console.log("Added to sell:", firedPottery);
+    } else {
+        console.log("Pottery is cracked, not added:", firedPottery);
     }
-    return firedPottery;
+    return potteryToSell;
  }
-  export const usePottery = () => {
-    return  potteryToSell.slice() 
-  }
      // ...returns and exports a copy of the array .slice() might need parameters... hover over it will tell. or use const copyOfArray = [...originalArray]
+
+export const usePottery = () => {
+   return potteryToSell.slice() 
+}
